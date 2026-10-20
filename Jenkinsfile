@@ -12,7 +12,7 @@ pipeline {
     parameters {
         choice(name: 'ACTION', choices: ['apply', 'destroy'],
                description: 'apply = create servers and deploy the app, destroy = delete everything')
-        string(name: 'AWS_REGION', defaultValue: 'ap-south-1',
+        string(name: 'AWS_REGION', defaultValue: 'us-east-2',
                description: 'AWS region for the three servers')
     }
 
