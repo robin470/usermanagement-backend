@@ -1,7 +1,7 @@
 variable "region" {
   description = "AWS region to create everything in"
   type        = string
-  default     = "ap-south-1"
+  default = "us-east-2"
 }
 
 variable "name_prefix" {
@@ -13,7 +13,7 @@ variable "name_prefix" {
 variable "instance_type" {
   description = "EC2 type for all three servers"
   type        = string
-  default     = "t3.medium"
+  default = "t3.small"
 }
 
 variable "extra_ssh_cidr" {
