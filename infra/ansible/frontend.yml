@@ -70,6 +70,14 @@
         mode: "0644"
       notify: Restart frontend
 
+    - name: Point production environment at the backend's public IP
+      ansible.builtin.template:
+        src: templates/environment.ts.j2
+        dest: "{{ app_dir }}/src/environment/environment.prod.ts"
+        owner: "{{ app_user }}"
+        group: "{{ app_user }}"
+        mode: "0644"
+      notify: Restart frontend
     - name: Check whether dependencies are installed
       ansible.builtin.stat:
         path: "{{ app_dir }}/node_modules"
