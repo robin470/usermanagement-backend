@@ -1,6 +1,6 @@
 # Where the application code comes from
 backend_repo: https://github.com/robin470/usermanagement-backend.git
-frontend_repo: https://github.com/robin470/user-management-frontend.git
+frontend_repo: https://github.com/robin470/usermanagement-frontend.git
 app_branch: main
 
 # The Linux user that owns and runs the apps
